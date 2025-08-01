@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.padding-x {
+  @apply px-4 md:px-7 lg:px-28;
+}
+.flex-center {
+  @apply flex justify-center items-center;
+}
+.flex-between {
+  @apply flex items-center justify-between;
+}
+.flex-gap {
+  @apply flex items-center;
+}
+.trans-props {
+  @apply transition duration-700;
+}
+.max-w {
+  @apply max-w-[1700px] mx-auto;
+}
+.page-wrapper {
+  @apply px-4 md:px-7 lg:px-28 max-w-[1700px] mx-auto;
+}
+.scrollable-container::-webkit-scrollbar {
+  display: none; /* Set the width of the scrollbar */
+  /* width: 2px; */
+}
+.blinking-div {
+  animation: blink 1s infinite; /* Apply the blink animation */
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

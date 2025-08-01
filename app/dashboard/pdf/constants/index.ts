@@ -1,0 +1,7 @@
+export const pdfDropdown = [
+  "OTHER PUBLICATION",
+  "CLIMATE TIMES JOURNAL",
+  "SHE CULTURE",
+  "2024 JOURNAL",
+  "OTHER SHE CULTURE",
+];
