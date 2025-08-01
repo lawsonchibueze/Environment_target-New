@@ -4,4 +4,7 @@ export const pdfDropdown = [
   "SHE CULTURE",
   "2024 JOURNAL",
   "OTHER SHE CULTURE",
+  "REBECCA OTHERS 2025",
+  "VOLUME 7 NO 1 SPECIAL EDITION",
+  "VOLUME 7 NO 2",
 ];
