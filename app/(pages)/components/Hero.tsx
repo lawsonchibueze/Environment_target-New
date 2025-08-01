@@ -51,6 +51,7 @@ const Hero = () => {
               className="py-3 lg:py-4 text-white border-white border w-full lg:w-40"
             />
           </div> */}
+          {/* he */}
         </div>
         <div className="flex md:h-[600px] lg:h-auto overflow-hidden justify-center">
           <Swiper
