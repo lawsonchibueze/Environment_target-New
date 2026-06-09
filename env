@@ -1,0 +1,3 @@
+DATABASE_URL=mongodb+srv://environmentaltargets:PHgyt1Zp69SiPjsu@cluster0.jahr0jp.mongodb.net/<mydb>?retryWrites=true&w=majority
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=dlqlj4wnv
+NEXTAUTH_SECRET=randompassword

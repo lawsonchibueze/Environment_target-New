@@ -8,4 +8,6 @@ export const certificateImages = [
   "/images/img-20.jpg",
   "/images/img-49.jpeg",
   "/images/img-50.jpeg",
+  "/images/img-51.jpeg",
+  "/images/img-52.jpeg",
 ];
