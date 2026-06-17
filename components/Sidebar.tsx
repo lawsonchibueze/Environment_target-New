@@ -38,7 +38,10 @@ const Sidebar = ({ state, setState }: sideBarProps) => {
         <div className="flex-between relative z-10 border-b pb-4">
           <div className="flex-gap gap-4">
             <div className="w-14 h-14  rounded-full">
-              <CustomImage src="/images/logo.jpg" className="rounded-full" />
+              <CustomImage
+                src="/images/second-logo.jpeg"
+                className="rounded-full"
+              />
             </div>
             <p className="font-semibold text-xl">EMT</p>
           </div>
@@ -56,13 +59,16 @@ const Sidebar = ({ state, setState }: sideBarProps) => {
                   {item.title === "Publication" &&
                     (publicDrop ? <ChevronUp /> : <ChevronDown />)}
                 </div>
-                {publicDrop && item.title === "Publication" ? (
+                {publicDrop && item.title === "Publication" ?
                   <div className="mt-4 mb-2 w-full flex flex-col items-center">
                     <p
                       className="text-[14px] flex-gap gap-3"
                       onClick={() => setSheDrop(!sheDrop)}
                     >
-                      SHE CULTURE {sheDrop ? <ChevronUp /> : <ChevronDown />}
+                      SHE CULTURE{" "}
+                      {sheDrop ?
+                        <ChevronUp />
+                      : <ChevronDown />}
                     </p>
                     {sheDrop && (
                       <div className="my-3 flex-center flex-col">
@@ -71,7 +77,7 @@ const Sidebar = ({ state, setState }: sideBarProps) => {
                           onClick={() =>
                             handleEvent(
                               "null",
-                              "/publication/she-culture/2024-journal"
+                              "/publication/she-culture/2024-journal",
                             )
                           }
                         >
@@ -82,7 +88,7 @@ const Sidebar = ({ state, setState }: sideBarProps) => {
                           onClick={() =>
                             handleEvent(
                               "null",
-                              "/publication/she-culture/other-she-culture"
+                              "/publication/she-culture/other-she-culture",
                             )
                           }
                         >
@@ -93,7 +99,7 @@ const Sidebar = ({ state, setState }: sideBarProps) => {
                     <p className="text-[14px] my-2">CLIMATE TIMES JOURNAL</p>
                     <p className="text-[14px]">OTHER PUBLICATION</p>{" "}
                   </div>
-                ) : null}
+                : null}
               </div>
             );
           })}

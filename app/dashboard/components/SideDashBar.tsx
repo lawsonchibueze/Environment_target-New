@@ -22,7 +22,7 @@ const SideDashBar = ({ state, setState }: sideBarProps) => {
         <div className="flex-between px-8 lg:px-10 items-center text-white">
           <div className="flex gap-5 items-center">
             <CustomImage
-              src="/images/logo.jpg"
+              src="/images/second-logo.jpeg"
               className="w-12 lg:w-14 rounded-full"
             />
             <p className="text-3xl font-semibold">EMT</p>

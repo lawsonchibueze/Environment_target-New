@@ -37,7 +37,7 @@ const Navbar = () => {
           <div className="flex-gap gap-6">
             {/* <div className="p-6 md:p-7 rounded-full bg-red-500"></div> */}
             <CustomImage
-              src="/images/logo.jpg"
+              src="/images/second-logo.jpeg"
               className="rounded-full w-12 lg:w-14"
             />
 
@@ -55,86 +55,90 @@ const Navbar = () => {
                     className="relative group"
                     key={index}
                   >
-                    {item.title === "Publication" && publicDrop ? (
-                      <div
-                        className="absolute -left-5 pt-7 top-0"
-                        onMouseOver={() => handleDropDown(true, item.title)}
-                        onClick={() => handleDropDown(false, item.title)}
-                      >
-                        <div className="bg-white p-3 relative w-28 flex gap-2 flex-col text-black">
-                          {sheDrop && (
-                            <div
+                    {
+                      item.title === "Publication" && publicDrop ?
+                        <div
+                          className="absolute -left-5 pt-7 top-0"
+                          onMouseOver={() => handleDropDown(true, item.title)}
+                          onClick={() => handleDropDown(false, item.title)}
+                        >
+                          <div className="bg-white p-3 relative w-28 flex gap-2 flex-col text-black">
+                            {sheDrop && (
+                              <div
+                                onMouseEnter={() => setSheDrop(true)}
+                                onMouseLeave={() => setSheDrop(false)}
+                                className="absolute -right-[184px] top-0 w-52  flex justify-center z-10"
+                              >
+                                <div className="p-2 bg-white top-0 flex gap-3 flex-col">
+                                  <Link
+                                    className="hover:bg-slate-200 p-1 rounded-md"
+                                    href="/publication/she-culture/2024-journal"
+                                  >
+                                    2024 JOURNAL
+                                  </Link>
+                                  <Link
+                                    className="hover:bg-slate-200 p-1 rounded-md"
+                                    href="/publication/she-culture/other-she-culture"
+                                  >
+                                    OTHER SHE CULTURE
+                                  </Link>
+                                  <Link
+                                    className="hover:bg-slate-200 p-1 rounded-md"
+                                    href="/publication/she-culture/rebecca-others-2025"
+                                  >
+                                    REBECCA OTHERS 2025
+                                  </Link>
+                                  <Link
+                                    className="hover:bg-slate-200 p-1 rounded-md"
+                                    href="/publication/she-culture/volume-7-no-1"
+                                  >
+                                    VOLUME 7 NO 1
+                                  </Link>
+                                  <Link
+                                    className="hover:bg-slate-200 p-1 rounded-md"
+                                    href="/publication/she-culture/volume-7-no-2"
+                                  >
+                                    VOLUME 7 NO 2
+                                  </Link>
+                                </div>
+                              </div>
+                            )}
+
+                            <p
+                              className="text-[12px]"
                               onMouseEnter={() => setSheDrop(true)}
                               onMouseLeave={() => setSheDrop(false)}
-                              className="absolute -right-[184px] top-0 w-52  flex justify-center z-10"
                             >
-                              <div className="p-2 bg-white top-0 flex gap-3 flex-col">
-                                <Link
-                                  className="hover:bg-slate-200 p-1 rounded-md"
-                                  href="/publication/she-culture/2024-journal"
-                                >
-                                  2024 JOURNAL
-                                </Link>
-                                <Link
-                                  className="hover:bg-slate-200 p-1 rounded-md"
-                                  href="/publication/she-culture/other-she-culture"
-                                >
-                                  OTHER SHE CULTURE
-                                </Link>
-                                <Link
-                                  className="hover:bg-slate-200 p-1 rounded-md"
-                                  href="/publication/she-culture/rebecca-others-2025"
-                                >
-                                  REBECCA OTHERS 2025
-                                </Link>
-                                <Link
-                                  className="hover:bg-slate-200 p-1 rounded-md"
-                                  href="/publication/she-culture/volume-7-no-1"
-                                >
-                                  VOLUME 7 NO 1
-                                </Link>
-                                <Link
-                                  className="hover:bg-slate-200 p-1 rounded-md"
-                                  href="/publication/she-culture/volume-7-no-2"
-                                >
-                                  VOLUME 7 NO 2
-                                </Link>
-                              </div>
-                            </div>
-                          )}
-
-                          <p
-                            className="text-[12px]"
-                            onMouseEnter={() => setSheDrop(true)}
-                            onMouseLeave={() => setSheDrop(false)}
-                          >
-                            SHE CULTURE
-                          </p>
-                          <Link href="/publication/climate-times">
-                            <p className="text-[12px]">CLIMATE TIMES JOURNAL</p>
-                          </Link>
-                          <Link href="/publication/other-journal">
-                            <p className="text-[12px]">OTHER PUBLICATION</p>
-                          </Link>
+                              SHE CULTURE
+                            </p>
+                            <Link href="/publication/climate-times">
+                              <p className="text-[12px]">
+                                CLIMATE TIMES JOURNAL
+                              </p>
+                            </Link>
+                            <Link href="/publication/other-journal">
+                              <p className="text-[12px]">OTHER PUBLICATION</p>
+                            </Link>
+                          </div>
                         </div>
-                      </div>
-                    ) : // : item.title === "Climate Time Sharing" && publicDrop ? (
-                    //   <div
-                    //     className="absolute -left-5 pt-7 top-0"
-                    //     onMouseOver={() => handleDropDown(true, item.title)}
-                    //     onClick={() => handleDropDown(true, item.title)}
-                    //   >
-                    //     <div className="bg-white p-3 relative w-28 flex gap-2 flex-col text-black">
-                    //       <Link href="/publication/climate-times">
-                    //         <p className="text-[12px]">CLIMATE TIMES JOURNAL</p>
-                    //       </Link>
-                    //       <Link href="/publication/other-journal">
-                    //         <p className="text-[12px]">OTHER PUBLICATION</p>
-                    //       </Link>
-                    //     </div>
-                    //   </div>
-                    // )
-                    null}
+                        // : item.title === "Climate Time Sharing" && publicDrop ? (
+                        //   <div
+                        //     className="absolute -left-5 pt-7 top-0"
+                        //     onMouseOver={() => handleDropDown(true, item.title)}
+                        //     onClick={() => handleDropDown(true, item.title)}
+                        //   >
+                        //     <div className="bg-white p-3 relative w-28 flex gap-2 flex-col text-black">
+                        //       <Link href="/publication/climate-times">
+                        //         <p className="text-[12px]">CLIMATE TIMES JOURNAL</p>
+                        //       </Link>
+                        //       <Link href="/publication/other-journal">
+                        //         <p className="text-[12px]">OTHER PUBLICATION</p>
+                        //       </Link>
+                        //     </div>
+                        //   </div>
+                        // )
+                      : null
+                    }
                     {isActive && (
                       <div className="w-full flex-center">
                         <div className="w-5 h-[3px] shadow-lg rounded-full absolute trans-props -bottom-2 bg-base-color"></div>

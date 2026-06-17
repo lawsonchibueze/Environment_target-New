@@ -78,7 +78,7 @@ const Login = () => {
           <div className="w-full md:w-2/3 lg:w-1/2">
             <div className="flex-center mb-12 gap-4">
               <CustomImage
-                src="/images/logo.jpg"
+                src="/images/second-logo.jpeg"
                 className="w-12 rounded-full"
               />
               <p className="text-3xl font-semibold">EMT</p>
@@ -99,15 +99,14 @@ const Login = () => {
             <p className="text-end text-blue-400 text-sm mt-5">
               Forgot Password
             </p>
-            {!isLoading ? (
+            {!isLoading ?
               <CustomButton className="py-[14px] text-white mt-6 w-full" />
-            ) : (
-              <CustomButton
+            : <CustomButton
                 loading
                 disabled
                 className="py-[14px] text-white mt-6 w-full"
               />
-            )}
+            }
           </div>
         </form>
       </div>

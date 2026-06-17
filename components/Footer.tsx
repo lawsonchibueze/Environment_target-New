@@ -19,7 +19,7 @@ const Footer = () => {
             <div className="flex-gap gap-5">
               {/* <div className="p-7 rounded-full bg-white"></div> */}
               <CustomImage
-                src="/images/logo.jpg"
+                src="/images/second-logo.jpeg"
                 className="rounded-full w-14"
               />
               <p className="font-semibold text-xl text-white">

@@ -44,6 +44,12 @@ export const navlinks: navLinksProps[] = [
     img: "/icons/contact.png",
   },
   {
+    title: "Technical Partnership",
+    link: "/technical-partnership",
+    img: "/icons/partnership.png",
+  },
+
+  {
     title: "Climate Time Sharing",
     link: "/climate-time-sharing",
     // dd: true,
