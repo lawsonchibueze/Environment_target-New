@@ -38,7 +38,7 @@ const Navbar = () => {
             {/* <div className="p-6 md:p-7 rounded-full bg-red-500"></div> */}
             <CustomImage
               src="/images/second-logo.jpeg"
-              className="rounded-full w-12 lg:w-14"
+              className="rounded-full w-20 lg:w-20"
             />
 
             <p className="text-2xl lg:text-3xl font-semibold">EMT</p>

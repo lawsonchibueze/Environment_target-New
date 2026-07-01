@@ -20,7 +20,7 @@ const Footer = () => {
               {/* <div className="p-7 rounded-full bg-white"></div> */}
               <CustomImage
                 src="/images/second-logo.jpeg"
-                className="rounded-full w-14"
+                className="rounded-full w-20"
               />
               <p className="font-semibold text-xl text-white">
                 Environment & Millennium Targets Ltd
