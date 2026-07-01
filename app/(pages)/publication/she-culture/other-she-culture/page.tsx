@@ -3,8 +3,6 @@ import HeroOtherShe from "./components/HeroOtherShe";
 import OtherSheList from "./components/OtherSheList";
 import getJounal from "@/app/action/getJournal";
 
-// export const dynamic = "force-dynamic";
-
 const page = async () => {
   let journals: {
     id: string;
