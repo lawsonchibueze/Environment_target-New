@@ -20,11 +20,21 @@ const page = async () => {
     name: string;
   }[] = [];
 
+  // try {
+  //   const journalz = await getJounal();
+  //   journals = journalz.filter((j) => {
+  //     return j.category.toLocaleUpperCase() === "OTHER SHE CULTURE";
+  //   });
+  // } catch (error) {
+  //   console.log(error);
+  // }
+
   try {
     const journalz = await getJounal();
-    journals = journalz.filter((j) => {
-      return j.category.toLocaleUpperCase() === "OTHER SHE CULTURE";
-    });
+
+    journals = journalz
+      .filter((j) => j.category.toUpperCase() === "OTHER SHE CULTURE")
+      .reverse();
   } catch (error) {
     console.log(error);
   }
