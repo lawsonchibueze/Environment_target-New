@@ -72,6 +72,18 @@ const Navbar = () => {
                                 <div className="p-2 bg-white top-0 flex gap-3 flex-col">
                                   <Link
                                     className="hover:bg-slate-200 p-1 rounded-md"
+                                    href="/publication/she-culture/volume-8-no-1"
+                                  >
+                                    VOLUME 8 NO 1
+                                  </Link>
+                                  <Link
+                                    className="hover:bg-slate-200 p-1 rounded-md"
+                                    href="/publication/she-culture/volume-8-no-2"
+                                  >
+                                    VOLUME 8 NO 2
+                                  </Link>
+                                  <Link
+                                    className="hover:bg-slate-200 p-1 rounded-md"
                                     href="/publication/she-culture/2024-journal"
                                   >
                                     2024 JOURNAL
