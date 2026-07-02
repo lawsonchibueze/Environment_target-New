@@ -15,14 +15,14 @@ const OtherSheList = async () => {
     const journalz = await getJounal();
 
     journals = journalz.filter((j) => {
-      return j.category === "VOLUME 8 NO 2 SPECIAL EDITION";
+      return j.category === "VOLUME 8 NO 2 ";
     });
   } catch (error) {
     console.log(error);
   }
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <PageWrapper wrap={true} title="VOLUME 8 NO 2 SPECIAL EDITION">
+      <PageWrapper wrap={true} title="VOLUME 8 NO 2 ">
         <GridWrapper lg="3" validated={true}>
           {journals.map((items, index) => {
             return (

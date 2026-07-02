@@ -12,7 +12,7 @@ const HeroOtherShe = () => {
           <div className="absolute -top-40 -right-40 w-[500px] h-[500px] border border-white opacity-10 rounded-full"></div>
           <div className="lg:w-1/2 relative">
             <p className="text-white text-2xl lg:text-4xl font-semibold">
-              VOLUME 8 NO 2 SPECIAL EDITION
+              VOLUME 8 NO 2
             </p>
             {/* <p className="my-10 text-white">
               Environment & Millennium Targets LTD, (EMT) comprises a team of
@@ -25,7 +25,7 @@ const HeroOtherShe = () => {
               <ChevronRight className="w-5" />
               <p>Publication</p>
               <ChevronRight className="w-5" />
-              <p> VOLUME 8 NO 2 SPECIAL EDITION</p>
+              <p> VOLUME 8 NO 2 </p>
             </div>
           </div>
         </div>
