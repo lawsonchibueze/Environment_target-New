@@ -84,6 +84,12 @@ const Navbar = () => {
                                   </Link>
                                   <Link
                                     className="hover:bg-slate-200 p-1 rounded-md"
+                                    href="/publication/she-culture/volume-8-no-3-2026"
+                                  >
+                                    VOLUME 8 NO 3 2026
+                                  </Link>
+                                  <Link
+                                    className="hover:bg-slate-200 p-1 rounded-md"
                                     href="/publication/she-culture/2024-journal"
                                   >
                                     2024 JOURNAL
