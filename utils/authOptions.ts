@@ -27,7 +27,7 @@ export const authOptions: NextAuthOptions = {
 
         const isCorrect = await bcrypt.compare(
           credentials.password,
-          user.password
+          user.password,
         );
         if (!isCorrect) {
           throw new Error("Incorrect password");
