@@ -15,3 +15,14 @@ export default async function getJounal() {
     throw new Error(error);
   }
 }
+
+// import { prisma } from "../../lib/prismadb";
+
+// export default async function getJounal() {
+//   try {
+//     return await prisma.upload.findMany();
+//   } catch (error) {
+//     console.error("Failed to fetch journals:", error);
+//     return [];
+//   }
+// }

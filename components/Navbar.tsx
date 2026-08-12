@@ -188,6 +188,8 @@ const Navbar = () => {
               className="py-3 lg:w-36 text-white"
               bgColor="bg-blue-500"
               title="Contact Us"
+              navigate={true}
+              link="/contact"
             />
           </div>
         </div>
