@@ -168,6 +168,7 @@ const Navbar = () => {
                               href="https://environmenttargets.app"
                               target="_blank"
                               rel="noopener noreferrer"
+                              onClick={(event) => event.stopPropagation()}
                               className="text-[12px] hover:bg-slate-200 p-1 rounded-md block"
                             >
                               EMT Analysis Tools
