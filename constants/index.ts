@@ -39,8 +39,8 @@ export const navlinks: navLinksProps[] = [
   },
   {
     title: "Programmes",
+    dd: true,
     link: "/programmes",
-    // dd: true,
     img: "/icons/contact.png",
   },
   {

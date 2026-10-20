@@ -177,15 +177,15 @@ const HeroContact = () => {
                 Digital workspace
               </p>
               <a
-                href="https://emt-icat.netlify.app/preview"
+                href="https://environmenttargets.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-3 flex items-center justify-between border border-white/30 bg-white/10 p-4 transition hover:border-white hover:bg-white/20"
               >
                 <span>
-                  <span className="block font-semibold">EMT-ICAT-APP</span>
+                  <span className="block font-semibold">EMT Analysis Tools</span>
                   <span className="mt-1 block text-sm text-blue-100">
-                    Open the EMT ICAT application
+                    Open EMT Analysis Tools
                   </span>
                 </span>
                 <ArrowUpRight className="h-5 w-5 shrink-0" />

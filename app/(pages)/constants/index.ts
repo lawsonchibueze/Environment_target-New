@@ -30,6 +30,6 @@ export const courses = [
 
 export const heroimages = [
   "/images/img-2.jpg",
-  "/images/img-9.jpg",
+  "/images/emt-analysis-tools.jpeg",
   "/images/img-13.jpg",
 ];

@@ -12,12 +12,15 @@ import { useRouter } from "next/navigation";
 const Sidebar = ({ state, setState }: sideBarProps) => {
   const [publicDrop, setpublicDrop] = useState(false);
   const [sheDrop, setSheDrop] = useState(false);
+  const [programDrop, setProgramDrop] = useState(false);
 
   const router = useRouter();
 
   const handleEvent = (title: string, path?: string) => {
     if (title === "Publication") {
       setpublicDrop(!publicDrop);
+    } else if (title === "Programmes") {
+      setProgramDrop(!programDrop);
     } else {
       router.push(path as string);
       setState(false);
@@ -100,6 +103,17 @@ const Sidebar = ({ state, setState }: sideBarProps) => {
                     <p className="text-[14px]">OTHER PUBLICATION</p>{" "}
                   </div>
                 : null}
+                {programDrop && item.title === "Programmes" ? (
+                  <a
+                    href="https://environmenttargets.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setState(false)}
+                    className="mt-4 text-[14px]"
+                  >
+                    EMT Analysis Tools
+                  </a>
+                ) : null}
               </div>
             );
           })}

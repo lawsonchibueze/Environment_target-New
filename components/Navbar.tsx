@@ -16,9 +16,11 @@ const Navbar = () => {
   const [publicDrop, setpublicDrop] = useState(false);
   const [publicDrop1, setpublicDrop1] = useState(false);
   const [sheDrop, setSheDrop] = useState(false);
+  const [programDrop, setProgramDrop] = useState(false);
 
   const handleDropDown = (params: boolean, title?: string) => {
     if (title === "Publication") return setpublicDrop(params);
+    if (title === "Programmes") return setProgramDrop(params);
     if (title === "Climate Time Sharing") return setpublicDrop1(true);
   };
 
@@ -155,6 +157,23 @@ const Navbar = () => {
                         //     </div>
                         //   </div>
                         // )
+                      : item.title === "Programmes" && programDrop ?
+                        <div
+                          className="absolute -left-5 pt-7 top-0"
+                          onMouseOver={() => handleDropDown(true, item.title)}
+                          onClick={() => handleDropDown(false, item.title)}
+                        >
+                          <div className="bg-white p-3 relative w-48 text-black">
+                            <a
+                              href="https://environmenttargets.app"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-[12px] hover:bg-slate-200 p-1 rounded-md block"
+                            >
+                              EMT Analysis Tools
+                            </a>
+                          </div>
+                        </div>
                       : null
                     }
                     {isActive && (
