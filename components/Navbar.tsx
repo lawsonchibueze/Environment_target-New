@@ -171,7 +171,7 @@ const Navbar = () => {
                               onClick={(event) => event.stopPropagation()}
                               className="text-[12px] hover:bg-slate-200 p-1 rounded-md block"
                             >
-                              EMT Analysis Tools
+                              EMT DIGITAL SOLUTION
                             </a>
                           </div>
                         </div>

@@ -111,7 +111,7 @@ const Sidebar = ({ state, setState }: sideBarProps) => {
                     onClick={() => setState(false)}
                     className="mt-4 text-[14px]"
                   >
-                    EMT Analysis Tools
+                    EMT DIGITAL SOLUTION
                   </a>
                 ) : null}
               </div>

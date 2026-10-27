@@ -30,8 +30,8 @@ export default function page() {
             Events and Programmes
           </p>
           <p className="my-10 text-white">
-            Climate Change Sustainable and Development Studies (CCS& SDS),
-            Rivers State University (RSU), Port Harcourt.
+            CENTRE FOR CLIMATE CHANGE AND SUSTAINABLE DEVELOPMENT STUDIES ( CCC&SDS)
+            RIVERS STATE, UNIVERSITY ( RSU), PORT HARCOURT.
           </p>
           <div className="text-white flex-gap gap-2">
             <Link href="/">Home</Link>
