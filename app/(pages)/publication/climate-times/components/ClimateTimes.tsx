@@ -4,11 +4,23 @@ import PageWrapper from "@/components/PageWrapper";
 import React from "react";
 // import { journals } from "../constants";
 
+const localClimateTimes = [
+  {
+    upload: "/files/climate-times-journal-nov-2026-ngaju-others.pdf",
+    name: "Climate Times Journal - November 2026 - Ngaju & others",
+  },
+  {
+    upload: "/files/climate-times-journal-nov-2026-ngaju-et-al.pdf",
+    name: "Climate Times Journal - November 2026 - Ngaju et al.",
+  },
+];
+
 const ClimateTimes = async () => {
   const journalz = await getJounal();
-  const journals = journalz.filter((j) => {
-    return j.category === "CLIMATE TIMES JOURNAL";
-  });
+  const journals = [
+    ...localClimateTimes,
+    ...journalz.filter((j) => j.category === "CLIMATE TIMES JOURNAL"),
+  ];
   return (
     <PageWrapper wrap={true} title="CLIMATE TIMES JOURNAL">
       <GridWrapper lg="3" validated={true}>
@@ -21,6 +33,7 @@ const ClimateTimes = async () => {
                 {/* <div className="relative h-96 w-40"></div> */}
                 <iframe
                   src={items.upload}
+                  title={items.name}
                   scrolling="no"
                   className="cursor-none h-96  scrollable-container"
                 ></iframe>

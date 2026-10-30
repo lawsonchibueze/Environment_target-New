@@ -52,7 +52,7 @@ export const navlinks: navLinksProps[] = [
   {
     title: "Climate Time Sharing",
     link: "/climate-time-sharing",
-    // dd: true,
+    dd: true,
     img: "/icons/contact.png",
   },
 ];

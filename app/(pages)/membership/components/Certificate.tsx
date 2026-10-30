@@ -9,20 +9,26 @@ const Certificate = () => {
   return (
     <PageWrapper title="Certificate" wrap={true}>
       <div className="mb-10 flex flex-col items-center justify-center gap-6 md:flex-row md:gap-10">
-        <CustomImage
-          src="/images/img-28.jpg"
-          alt="Previous membership logo"
-          className="w-64 rounded-full object-contain md:w-40"
-        />
+        <div className="flex flex-col items-center gap-3">
+          <CustomImage
+            src="/images/iftdo-member-old.png"
+            alt="Old IFTDO member logo"
+            className="w-52 object-contain"
+          />
+          <p className="font-semibold text-base-color">Old logo</p>
+        </div>
         <ArrowRight
           aria-label="Points to the new membership logo"
           className="h-10 w-10 rotate-90 text-base-color md:rotate-0"
         />
-        <CustomImage
-          src="/images/iftdo-member.jpeg"
-          alt="IF TDO member logo"
-          className="w-52 object-contain"
-        />
+        <div className="flex flex-col items-center gap-3">
+          <CustomImage
+            src="/images/iftdo-member.jpeg"
+            alt="New IFTDO member logo"
+            className="w-52 object-contain"
+          />
+          <p className="font-semibold text-base-color">New logo</p>
+        </div>
       </div>
       <GridWrapper validated={true} lg="3">
         {certificateImages.map((item, index) => {

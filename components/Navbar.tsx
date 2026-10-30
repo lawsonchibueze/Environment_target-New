@@ -21,7 +21,7 @@ const Navbar = () => {
   const handleDropDown = (params: boolean, title?: string) => {
     if (title === "Publication") return setpublicDrop(params);
     if (title === "Programmes") return setProgramDrop(params);
-    if (title === "Climate Time Sharing") return setpublicDrop1(true);
+    if (title === "Climate Time Sharing") return setpublicDrop1(params);
   };
 
   return (
@@ -89,6 +89,13 @@ const Navbar = () => {
                                     href="/publication/she-culture/volume-8-no-3-2026"
                                   >
                                     VOLUME 8 NO 3 2026
+                                  </Link>
+                                  <Link
+                                    className="hover:bg-slate-200 p-1 rounded-md"
+                                    href="/publication/she-culture/volume-8-no-5"
+                                    onClick={(event) => event.stopPropagation()}
+                                  >
+                                    VOLUME 8, NO 5
                                   </Link>
                                   <Link
                                     className="hover:bg-slate-200 p-1 rounded-md"
@@ -173,6 +180,21 @@ const Navbar = () => {
                             >
                               EMT DIGITAL SOLUTION
                             </a>
+                          </div>
+                        </div>
+                      : item.title === "Climate Time Sharing" && publicDrop1 ?
+                        <div
+                          className="absolute -left-5 pt-7 top-0"
+                          onMouseOver={() => handleDropDown(true, item.title)}
+                        >
+                          <div className="bg-white p-3 relative w-48 text-black">
+                            <Link
+                              href="/publication/climate-times"
+                              onClick={(event) => event.stopPropagation()}
+                              className="text-[12px] hover:bg-slate-200 p-1 rounded-md block"
+                            >
+                              CLIMATE TIMES JOURNAL
+                            </Link>
                           </div>
                         </div>
                       : null

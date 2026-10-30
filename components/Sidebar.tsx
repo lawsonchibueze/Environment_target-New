@@ -13,6 +13,7 @@ const Sidebar = ({ state, setState }: sideBarProps) => {
   const [publicDrop, setpublicDrop] = useState(false);
   const [sheDrop, setSheDrop] = useState(false);
   const [programDrop, setProgramDrop] = useState(false);
+  const [climateDrop, setClimateDrop] = useState(false);
 
   const router = useRouter();
 
@@ -21,6 +22,8 @@ const Sidebar = ({ state, setState }: sideBarProps) => {
       setpublicDrop(!publicDrop);
     } else if (title === "Programmes") {
       setProgramDrop(!programDrop);
+    } else if (title === "Climate Time Sharing") {
+      setClimateDrop(!climateDrop);
     } else {
       router.push(path as string);
       setState(false);
@@ -61,6 +64,8 @@ const Sidebar = ({ state, setState }: sideBarProps) => {
                   {item.title}
                   {item.title === "Publication" &&
                     (publicDrop ? <ChevronUp /> : <ChevronDown />)}
+                  {item.title === "Climate Time Sharing" &&
+                    (climateDrop ? <ChevronUp /> : <ChevronDown />)}
                 </div>
                 {publicDrop && item.title === "Publication" ?
                   <div className="mt-4 mb-2 w-full flex flex-col items-center">
@@ -97,6 +102,13 @@ const Sidebar = ({ state, setState }: sideBarProps) => {
                         >
                           OTHER SHE CULTURE
                         </div>
+                        <Link
+                          href="/publication/she-culture/volume-8-no-5"
+                          onClick={() => setState(false)}
+                          className="text-[13px]"
+                        >
+                          VOLUME 8, NO 5
+                        </Link>
                       </div>
                     )}
                     <p className="text-[14px] my-2">CLIMATE TIMES JOURNAL</p>
@@ -113,6 +125,15 @@ const Sidebar = ({ state, setState }: sideBarProps) => {
                   >
                     EMT DIGITAL SOLUTION
                   </a>
+                ) : null}
+                {climateDrop && item.title === "Climate Time Sharing" ? (
+                  <Link
+                    href="/publication/climate-times"
+                    onClick={() => setState(false)}
+                    className="mt-4 text-[14px]"
+                  >
+                    CLIMATE TIMES JOURNAL
+                  </Link>
                 ) : null}
               </div>
             );
