@@ -131,13 +131,18 @@ const Navbar = () => {
                               </div>
                             )}
 
-                            <p
-                              className="text-[12px]"
+                            <button
+                              type="button"
+                              className="bg-transparent p-0 text-left text-[12px]"
                               onMouseEnter={() => setSheDrop(true)}
-                              onMouseLeave={() => setSheDrop(false)}
+                              onClick={(event) => {
+                                event.preventDefault();
+                                event.stopPropagation();
+                                setSheDrop(true);
+                              }}
                             >
                               SHE CULTURE
-                            </p>
+                            </button>
                             <Link href="/publication/climate-times">
                               <p className="text-[12px]">
                                 CLIMATE TIMES JOURNAL
