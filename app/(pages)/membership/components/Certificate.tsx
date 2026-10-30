@@ -8,6 +8,13 @@ import { ArrowRight } from "lucide-react";
 const Certificate = () => {
   return (
     <PageWrapper title="Certificate" wrap={true}>
+      <div className="mb-10 flex-center">
+        <CustomImage
+          src="/images/img-28.jpg"
+          alt="Climate Reality Leadership Corps logo"
+          className="w-40 object-contain"
+        />
+      </div>
       <div className="mb-10 flex flex-col items-center justify-center gap-6 md:flex-row md:gap-10">
         <div className="flex flex-col items-center gap-3">
           <CustomImage
