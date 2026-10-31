@@ -53,7 +53,10 @@ const Navbar = () => {
                   <Link
                     href={item.link}
                     onMouseEnter={() => handleDropDown(true, item.title)}
-                    onMouseLeave={() => handleDropDown(false, item.title)}
+                    onMouseLeave={() => {
+                      handleDropDown(false, item.title);
+                      if (item.title === "Publication") setSheDrop(false);
+                    }}
                     className="relative group"
                     key={index}
                   >
@@ -67,8 +70,10 @@ const Navbar = () => {
                           <div className="bg-white p-3 relative w-28 flex gap-2 flex-col text-black">
                             {sheDrop && (
                               <div
-                                onMouseEnter={() => setSheDrop(true)}
-                                onMouseLeave={() => setSheDrop(false)}
+                                onMouseEnter={() => {
+                                  setSheDrop(true);
+                                  setpublicDrop(true);
+                                }}
                                 className="absolute -right-[184px] top-0 w-52  flex justify-center z-10"
                               >
                                 <div className="p-2 bg-white top-0 flex gap-3 flex-col">
@@ -96,6 +101,13 @@ const Navbar = () => {
                                     onClick={(event) => event.stopPropagation()}
                                   >
                                     VOLUME 8, NO 5
+                                  </Link>
+                                  <Link
+                                    className="hover:bg-slate-200 p-1 rounded-md"
+                                    href="/publication/she-culture/volume-8-no-6"
+                                    onClick={(event) => event.stopPropagation()}
+                                  >
+                                    VOLUME 8, NO. 6
                                   </Link>
                                   <Link
                                     className="hover:bg-slate-200 p-1 rounded-md"
@@ -135,6 +147,8 @@ const Navbar = () => {
                               type="button"
                               className="bg-transparent p-0 text-left text-[12px]"
                               onMouseEnter={() => setSheDrop(true)}
+                              onFocus={() => setSheDrop(true)}
+                              aria-expanded={sheDrop}
                               onClick={(event) => {
                                 event.preventDefault();
                                 event.stopPropagation();

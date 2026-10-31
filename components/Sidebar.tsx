@@ -109,6 +109,13 @@ const Sidebar = ({ state, setState }: sideBarProps) => {
                         >
                           VOLUME 8, NO 5
                         </Link>
+                        <Link
+                          href="/publication/she-culture/volume-8-no-6"
+                          onClick={() => setState(false)}
+                          className="text-[13px]"
+                        >
+                          VOLUME 8, NO. 6
+                        </Link>
                       </div>
                     )}
                     <p className="text-[14px] my-2">CLIMATE TIMES JOURNAL</p>
